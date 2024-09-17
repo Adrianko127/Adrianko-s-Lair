@@ -1,0 +1,35 @@
+/* Miscellaneous */
+
+@import url(normalize.css);
+
+:root{
+    --color-primary: #2584ff;
+    --color-secondary: #00d9ff;
+    --color-accent: #ff3400;
+    --color-headings: #1b0760;
+    --color-body: #918ca4;
+    --color-body-darker: #5c5577;
+    --color-border: #ccc;
+    --border-radius: 30px;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* Topography */
+
+::selection{
+    background: var(--color-primary);
+    color: white;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.5;
+    color: var(--color-body);
+}
