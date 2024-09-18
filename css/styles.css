@@ -1,8 +1,10 @@
 /* Miscellaneous */
 
 @import url(normalize.css);
+@import url(wow_styles.css);
 
 :root{
+    --gradient-rot: 1turn;
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
     --color-accent: #ff3400;
@@ -32,6 +34,9 @@ body{
     font-size: 2.4rem;
     line-height: 1.5;
     color: var(--color-body);
+    background: #181818;
+    width: 100%;
+    height: 100%;
 }
 h1, h2, h3{
     color: var(--color-headings);
@@ -63,6 +68,10 @@ p{
     align-items: center;
     justify-content: space-around;
 }
+.list__mainchar{
+    display: grid;
+    grid-template-columns: 5;
+}
 a{
     text-decoration: none;
     color: white;
@@ -71,7 +80,7 @@ a{
 /* Navigation Bar */
 
 .nav-bar{
-    background: #5c5577;
+    background: #000000;
     box-shadow: 0px -3px 10px 5px #000000;
 }
 .nav-bar__logo{
@@ -90,26 +99,82 @@ a{
     width: 150px;
     text-align: center;
 }
-.nav-bar__item>a{
-    font-weight: 150;
-}
-.nav-bar__item>a:hover{
-    color: #1b0760;
-}
+
 
 /* Main */
 .main__header{
     text-align: center;
+    padding-bottom: 2rem;
     background: white;
+    background: #000000;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+}
+.main__header>h1{
+    margin-top: 0rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+.main__heading{
+    color: var(--color-);
+}
+.main__body-header{
+    font-weight: 250;
+    color: white;
+    margin-bottom: 5rem;
 }
 .main__body{
     text-align: center;
+
+}
+.wowClass
+{
+    display: inline-block;
+    height: 50rem;
+    width: 50rem;
+    margin: 0rem auto;
+    margin-bottom: 2rem;
+}
+.wowClass:hover
+{
+    outline: 0.25em solid var(--color-body-darker);
+    outline-offset: -0.25em;
+}
+
+.charName
+{
+    color: white;
+    font-weight: 600;    
+}
+.charImg
+{
+    width: 100px;
+    height: 100px;
+    object-fit:contain;
+    object-position: 0px 25px;
+    transform: scale(10);
+    z-index: -4;
+    pointer-events: none;
+}
+.charImg::selection{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+/* Button */
+button{
+    background: rgb(0, 0, 0, 0);
+    border: none;
+    font-weight: 150;
+    transition: transform 0.3s;
+}
+button:hover{
+    transform: scale(1.2);
 }
 
 /* Footer */
 .footer-bar{
     display: flex;
-    background: #5c5577;
+    background: #332e49;
     text-align: center;
     justify-content: center;
     align-content: center;
@@ -118,4 +183,12 @@ a{
     font-weight: 150;
     margin: 2rem;
     color: white;
+}
+
+/* Grid */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    margin: 0 auto;
 }

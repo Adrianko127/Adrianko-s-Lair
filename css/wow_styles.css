@@ -1,0 +1,51 @@
+.Warrior {
+    background: linear-gradient(var(--gradient-rot), #C79F6C, rgba(255, 255, 255, 0) );
+}
+
+.Paladin {
+    background: linear-gradient(var(--gradient-rot), #F48CBA, rgba(255, 255, 255, 0) );
+}
+
+.Hunter {
+    background: linear-gradient(var(--gradient-rot), #ABD473, rgba(255, 255, 255, 0) );
+}
+
+.Rogue {
+    background: linear-gradient(var(--gradient-rot), #FFF569, rgba(255, 255, 255, 0) );
+}
+
+.Priest {
+    background: linear-gradient(var(--gradient-rot), #FFFFFF, rgba(255, 255, 255, 0) );
+}
+
+.DeathKnight {
+    background: linear-gradient(var(--gradient-rot), #C41F3B, rgba(255, 255, 255, 0) );
+}
+
+.Shaman {
+    background: linear-gradient(var(--gradient-rot), #0070DE, rgba(255, 255, 255, 0) );
+}
+
+.Mage {
+    background: linear-gradient(var(--gradient-rot), #69CCF0, rgba(255, 255, 255, 0) );
+}
+
+.Warlock {
+    background: linear-gradient(var(--gradient-rot), #8787ED, rgba(255, 255, 255, 0) );
+}
+
+.Druid {
+    background: linear-gradient(var(--gradient-rot), #FF7D0A, rgba(255, 255, 255, 0) );
+}
+
+.Monk {
+    background: linear-gradient(var(--gradient-rot), #00FF96, rgba(255, 255, 255, 0) );
+}
+
+.DemonHunter {
+    background: linear-gradient(var(--gradient-rot), #A335EE, rgba(255, 255, 255, 0) );
+}
+
+.Evoker{
+    background: linear-gradient(var(--gradient-rot), #33937F, rgba(255, 255, 255, 0) );
+}

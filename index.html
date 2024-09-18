@@ -17,29 +17,78 @@
     <header>
       <nav class="nav-bar">
         <ul class="list">
-          <li class="nav-bar__item"><a href="#">Home</a></li>
-          <li class="nav-bar__item"><a href="#">News</a></li>
+          <li class="nav-bar__item">
+            <button><a href="#">Home</a></button>
+          </li>
+          <li class="nav-bar__item">
+            <button><a href="#">News</a></button>
+          </li>
           <li class="nav-bar__item">
             <a href="index.html"
               ><img class="nav-bar__logo" src="images/logo.svg" alt=""
             /></a>
           </li>
-          <li class="nav-bar__item"><a href="#">Contact</a></li>
-          <li class="nav-bar__item"><a href="#">About</a></li>
+          <li class="nav-bar__item">
+            <button>
+              <a href="https://raider.io/characters/eu/sylvanas/Adriankolock"
+                >Contact</a
+              >
+            </button>
+          </li>
+          <li class="nav-bar__item">
+            <button><a href="#">About</a></button>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <header class="container main__header">
-        <h1>Welcome to my lair !</h1>
-        <p>This is my first official website I've created on my own.</p>
+      <header class="main__header">
+        <h1 class="main__heading">Welcome to my lair !</h1>
+        <p>
+          My name is Adrian and you've just stumbled upon my lair, here you'll
+          find information about my World of Warcraft account
+        </p>
       </header>
       <section class="container main__body">
-        <p>Skibidi</p>
+        <h2 class="main__body-header">My Characters</h2>
+        <div class="container grid">
+          <div class="wowClass Warlock">
+            <p class="charName">Adriankolock - 80 - Warlock</p>
+            <img
+              class="charImg"
+              src="https://render.worldofwarcraft.com/eu/character/sylvanas/253/255830013-main-raw.png?alt="
+            />
+          </div>
+          <div class="wowClass Warrior">
+            <p class="charName">Adrianaries - 80 - Warrior</p>
+            <img
+              class="charImg"
+              src="https://render.worldofwarcraft.com/eu/character/sylvanas/195/217950403-main-raw.png?alt="
+            />
+          </div>
+          <div class="wowClass DeathKnight">
+            <p class="charName">Adrianethil - 70</p>
+            <img
+              class="charImg"
+              src="https://render.worldofwarcraft.com/eu/character/sylvanas/135/257493639-main-raw.png?alt="
+            />
+          </div>
+          <div class="wowClass Mage">
+            <p class="charName">Adrianko - 70</p>
+            <img
+              class="charImg"
+              src="https://render.worldofwarcraft.com/eu/character/sylvanas/242/217789682-main-raw.png?alt="
+            />
+          </div>
+        </div>
       </section>
-      <footer class="footer-bar">
-        <p class="nav-bar__item">Made by Adrianko</p>
-      </footer>
     </main>
+    <footer class="footer-bar">
+      <p class="nav-bar__item">Made by Adrianko</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
