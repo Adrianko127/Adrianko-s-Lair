@@ -8,7 +8,7 @@
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
     --color-accent: #ff3400;
-    --color-headings: #1b0760;
+    --color-headings: #c4c4c4;
     --color-body: #918ca4;
     --color-body-darker: #5c5577;
     --color-border: #ccc;
@@ -81,7 +81,6 @@ a{
 
 .nav-bar{
     background: #000000;
-    box-shadow: 0px -3px 10px 5px #000000;
 }
 .nav-bar__logo{
     width: 100px;
@@ -188,7 +187,8 @@ button:hover{
 /* Grid */
 .grid{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     margin: 0 auto;
+    gap: 4rem;
 }
