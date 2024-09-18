@@ -33,12 +33,35 @@ body{
     line-height: 1.5;
     color: var(--color-body);
 }
+h1, h2, h3{
+    color: var(--color-headings);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+h1{
+    font-size: 7rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+    font-weight: 500;
+    
+}
+p{
+    margin-top: 0;
+}
 
 /* Lists */
+
 .list{
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 a{
     text-decoration: none;
@@ -48,17 +71,51 @@ a{
 /* Navigation Bar */
 
 .nav-bar{
-    background: linear-gradient(0deg, rgba(116,0,0,1) 0%, rgba(0,0,0,1) 65%);
-    color: white;
-    display: grid;
-    justify-content: space-evenly;
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    text-align: center;
+    background: #5c5577;
+    box-shadow: 0px -3px 10px 5px #000000;
 }
 .nav-bar__logo{
     width: 100px;
-    padding: 1rem;
+    padding-top: 1rem;
     filter: invert();
     justify-self: center;
+    transition: transform 0.2s;
+}
+.nav-bar__logo:hover{
+    transform: scale(1.1);
+}
+.nav-bar__item{
+    /* background: #918ca4; */
+    text-transform: uppercase;
+    width: 150px;
+    text-align: center;
+}
+.nav-bar__item>a{
+    font-weight: 150;
+}
+.nav-bar__item>a:hover{
+    color: #1b0760;
+}
+
+/* Main */
+.main__header{
+    text-align: center;
+    background: white;
+}
+.main__body{
+    text-align: center;
+}
+
+/* Footer */
+.footer-bar{
+    display: flex;
+    background: #5c5577;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+.footer-bar>p{
+    font-weight: 150;
+    margin: 2rem;
+    color: white;
 }
