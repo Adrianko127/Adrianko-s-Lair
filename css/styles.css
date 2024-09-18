@@ -93,7 +93,6 @@ a{
     transform: scale(1.1);
 }
 .nav-bar__item{
-    /* background: #918ca4; */
     text-transform: uppercase;
     width: 150px;
     text-align: center;
@@ -114,7 +113,7 @@ a{
     padding-bottom: 2rem;
 }
 .main__heading{
-    color: var(--color-);
+    color: white;
 }
 .main__body-header{
     font-weight: 250;
@@ -132,6 +131,7 @@ a{
     width: 50rem;
     margin: 0rem auto;
     margin-bottom: 2rem;
+    max-width: 50rem;
 }
 .wowClass:hover
 {
@@ -153,6 +153,7 @@ a{
     transform: scale(10);
     z-index: -4;
     pointer-events: none;
+    overflow: hidden;
 }
 .charImg::selection{
     background-color: rgba(0, 0, 0, 0);
@@ -187,8 +188,29 @@ button:hover{
 /* Grid */
 .grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
     justify-content: center;
     margin: 0 auto;
-    gap: 4rem;
+    /* gap: 1rem; */
+}
+/* Floating button */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:rgb(255, 255, 255);
+	color:#252323;
+	border-radius:50px;
+	text-align:center;
+    align-content: center;
+}
+.float:hover{
+    transform: scale(1.1);
+}
+.up{
+	margin-top:1.3rem;
+    transform: scale(1.5);
 }
