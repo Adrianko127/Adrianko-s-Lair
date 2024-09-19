@@ -162,9 +162,21 @@ a{
 /* Raider.IO Ratings */
 .raiderio__list{
     border-top: 1px solid white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: auto;
+}
+.raid__rating{
+    margin-top: 4rem;
 }
 .rio__body{
     border: 1px solid white;
+}
+.rio__heading{
+    font-weight: 200;
+    margin: 0;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 .rio__rarity4{
     color: rgb(237, 100, 110);
@@ -183,9 +195,8 @@ a{
     top: 10px;
     right: 5px;
 }
-.rio__heading{
-    font-weight: 200;
-    margin: 0;
+li>img:hover{
+    transform: scale(1.2);
 }
 
 
