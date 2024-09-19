@@ -159,6 +159,28 @@ a{
     background-color: rgba(0, 0, 0, 0);
 }
 
+/* Raider.IO Ratings */
+.rio__rarity4{
+    color: rgb(237, 100, 110);
+}
+.rio__rarity3{
+    color: rgb(172, 56, 229);
+}
+.rio__rarity2{
+    color: rgb(123, 86, 231);
+}
+.rio__rarity1{
+    color: rgb(21, 114, 218);
+}
+.rio__rating{
+    position: relative;
+    top: 10px;
+    right: 5px;
+}
+.rio__heading{
+    font-weight: 200;
+    margin: 0;
+}
 
 
 /* Button */
